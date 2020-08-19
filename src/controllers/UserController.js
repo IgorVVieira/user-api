@@ -7,6 +7,7 @@ module.exports = {
     },
 
     async store(req, res) {
+        const { name, email, age } = req.body;
         const user = await User.create(req.body);
         return res.json(user);
     },
@@ -54,6 +55,7 @@ module.exports = {
                 id,
             },
         });
+
         if (!user) {
             return res.status(400).json({ error: 'User not found' });
         }
