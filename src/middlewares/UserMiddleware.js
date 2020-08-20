@@ -6,5 +6,5 @@ module.exports = {
             return res.status(400).json({ error: 'Invalid age.' });
         }
         next();
-    }
+    },
 }
