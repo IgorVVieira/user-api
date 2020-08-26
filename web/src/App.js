@@ -1,8 +1,16 @@
 import React from 'react';
 
-function App() {
+import Header from './components/Header';
+
+import './global.css';
+import Routes from './routes';
+
+const App = () => {
   return (
-    <h1>CRUD Pessoas</h1>
+    <div className="App">
+      <Header></Header>
+      <Routes></Routes>
+    </div>
   );
 }
 
