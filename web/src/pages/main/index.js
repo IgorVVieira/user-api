@@ -23,16 +23,20 @@ class Main extends Component {
         const { users } = this.state;
 
         return (
-            <div className="users-list">
-                {users.map(users => (
-                    <article key={users.id}>
-                        <strong>{users.name}</strong>
-                        <p>{users.email}</p>
-                        <p>{users.age}</p>
-                        <Link to={`users/${users.id}`}>Editar</Link>
-                    </article>
-                ))}
-            </div>
+            <main>
+                <Link className="new-user" to={`/users`}>Cadastrar novo usuário</Link>
+
+                <div className="users-list">
+                    {users.map(users => (
+                        <article key={users.id}>
+                            <strong>{users.name}</strong>
+                            <p>{users.email}</p>
+                            <p>{users.age}</p>
+                            <Link to={`users/${users.id}`}>Editar</Link>
+                        </article>
+                    ))}
+                </div>
+            </main>
         );
     }
 }

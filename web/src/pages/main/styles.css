@@ -39,3 +39,17 @@
     background: #054f77;
     color: #fff;
 }
+
+.new-user {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #87ce;
+    background: #054f77;
+    margin-left: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.2s;
+}
