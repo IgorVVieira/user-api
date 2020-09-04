@@ -19,6 +19,10 @@ class Main extends Component {
         });
     }
 
+    async deleteUser(id) {
+        await api.delete(`/users/${id}`);
+    }
+
     render() {
         const { users } = this.state;
 
@@ -33,6 +37,9 @@ class Main extends Component {
                             <p>{users.email}</p>
                             <p>{users.age}</p>
                             <Link to={`users/${users.id}`}>Editar</Link>
+                            <Link onClick={async () => {
+                                await api.delete(`/users/${users.id}`)
+                            }} to="/">Deletar usuário</Link>
                         </article>
                     ))}
                 </div>

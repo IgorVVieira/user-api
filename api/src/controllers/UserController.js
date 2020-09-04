@@ -46,7 +46,7 @@ module.exports = {
         return res.json(user);
     },
 
-    async destroy(req, res) {
+    async delete(req, res) {
         const { id } = req.params;
 
         const user = await User.destroy({
