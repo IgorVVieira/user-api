@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 const Form = () => {
@@ -23,6 +24,7 @@ const Form = () => {
 
     return (
         <div className="form-user">
+            <Link to={'/'}>Voltar</Link>
             <h1>Cadastre um novo usuário</h1>
             <form onSubmit={handleRegister}>
                 <input type="text" placeholder="Nome" required value={name}

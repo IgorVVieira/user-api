@@ -12,10 +12,10 @@ class Main extends Component {
     }
 
     async componentDidMount() {
-        const resposnse = await api.get('/users');
+        const response = await api.get('/users');
 
         this.setState({
-            users: resposnse.data,
+            users: response.data,
         });
     }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import './styles.css';
@@ -20,6 +21,7 @@ class User extends Component {
 
         return (
             <div className="user-info">
+                <Link to={'/'}>Voltar</Link>
                 <h1>{user.name}</h1>
                 <p>{user.email}</p>
                 <p>{user.age}</p>
