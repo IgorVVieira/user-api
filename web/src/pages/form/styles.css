@@ -1,0 +1,9 @@
+.form-user h1 {
+    color: aliceblue;
+}
+
+.form-user form {
+    display: flex;
+    margin: 1px solid;
+    border-radius: 10px;
+}

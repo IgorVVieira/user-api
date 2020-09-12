@@ -22,9 +22,9 @@ class User extends Component {
         return (
             <div className="user-info">
                 <Link to={'/'}>Voltar</Link>
-                <h1>{user.name}</h1>
-                <p>{user.email}</p>
-                <p>{user.age}</p>
+                <h1>Nome: {user.name}</h1>
+                <p>Email: {user.email}</p>
+                <p>Idade: {user.age}</p>
             </div>
         );
     }

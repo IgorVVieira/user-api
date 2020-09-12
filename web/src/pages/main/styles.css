@@ -5,16 +5,20 @@
 }
 
 .users-list article {
-    background: #FFF;
-    border: 1px solid #87ce;
+    background: #44475a;
+    border: 1px solid #f8f8f2;
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
 }
 
+.users-list article strong {
+    color: aliceblue;
+}
+
 .users-list article p {
     font-size: 16px;
-    color: #999;
+    color: aliceblue;
     margin-top: 5px;
     line-height: 24px;
 }
@@ -23,9 +27,9 @@
     height: 42px;
     border-radius: 5px;
     border: 2px solid #87ce;
-    background: none;
+    background: #ffb86c;
     margin-top: 10px;
-    color: #87ce;
+    color: aliceblue;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -36,7 +40,7 @@
 }
 
 .users-list article a:hover {
-    background: #054f77;
+    background: #ff5555;
     color: #fff;
 }
 
@@ -44,7 +48,7 @@
     height: 50px;
     border-radius: 5px;
     border: 1px solid #87ce;
-    background: #054f77;
+    background: #50fa7b;
     margin-left: 10px;
     color: #FFF;
     font-weight: bold;

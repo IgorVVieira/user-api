@@ -33,9 +33,9 @@ class Main extends Component {
                 <div className="users-list">
                     {users.map(users => (
                         <article key={users.id}>
-                            <strong>{users.name}</strong>
-                            <p>{users.email}</p>
-                            <p>{users.age}</p>
+                            <strong>Nome: {users.name}</strong>
+                            <p>Email: {users.email}</p>
+                            <p>Idade: {users.age}</p>
                             <Link to={`users/${users.id}`}>Editar</Link>
                             <Link onClick={async () => {
                                 await api.delete(`/users/${users.id}`)
