@@ -16,11 +16,16 @@ const Form = () => {
             name, email, age,
         }
 
-        try {
-            const response = await api.post('/users', data);
-            alert(`Obrigado pelo cadastro: ${response.data.name}`);
-        } catch (error) {
-            alert('Erro ao cadastrar, tente novamente!');
+        if (age < 0) {
+            alert('Idade inválida!');
+        }
+        else {
+            try {
+                const response = await api.post('/users', data);
+                alert(`Obrigado pelo cadastro: ${response.data.name}`);
+            } catch (error) {
+                alert('Erro ao cadastrar, tente novamente!');
+            }
         }
     }
 
