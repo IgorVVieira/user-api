@@ -58,6 +58,6 @@ module.exports = {
         if (!user) {
             return res.status(400).json({ error: 'User not found' });
         }
-        return res.json(user);
+        return res.status(200);
     }
 };

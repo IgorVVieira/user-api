@@ -27,9 +27,9 @@
     height: 42px;
     border-radius: 5px;
     border: 2px solid #87ce;
-    background: #ffb86c;
+    background: #d3ddd3;
     margin-top: 10px;
-    color: aliceblue;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -40,8 +40,8 @@
 }
 
 .users-list article a:hover {
-    background: #ff5555;
-    color: #fff;
+    background: #808080;
+    color: black;
 }
 
 .new-user {
@@ -50,7 +50,7 @@
     border: 1px solid #87ce;
     background: #50fa7b;
     margin-left: 10px;
-    color: #FFF;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
