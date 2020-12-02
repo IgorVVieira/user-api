@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import api from '../../services/api';
+
+import Voltar from '../../components/Voltar';
 
 import './styles.css';
 
@@ -16,7 +17,7 @@ const Form = () => {
             name, email, age,
         }
 
-        if (age < 0) {
+        if (age < 0 || age >= 101) {
             alert('Idade inválida!');
         }
         else {
@@ -31,7 +32,7 @@ const Form = () => {
 
     return (
         <div className="form-user">
-            <Link to={'/'}>Voltar</Link>
+            <Voltar></Voltar>
             <h1>Cadastre um novo usuário</h1>
             <form onSubmit={handleRegister}>
                 <input type="text" placeholder="Nome" required value={name}

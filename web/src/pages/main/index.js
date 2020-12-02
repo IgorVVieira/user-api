@@ -36,7 +36,7 @@ class Main extends Component {
                             <strong>Nome: {users.name}</strong>
                             <p>Email: {users.email}</p>
                             <p>Idade: {users.age}</p>
-                            <Link to={`users/${users.id}`}>Editar</Link>
+                            <Link to={`user/${users.id}`}>Editar</Link>
                             <Link onClick={async () => {
                                 await api.delete(`/users/${users.id}`)
                             }} to="/">Deletar usuário</Link>
