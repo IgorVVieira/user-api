@@ -41,7 +41,6 @@ const Form = () => {
                     onChange={e => setEmail(e.target.value)} />
                 <input type="number" placeholder="Idade" required value={age}
                     onChange={e => setAge(e.target.value)} />
-
                 <button type="submit">Cadastrar</button>
             </form>
         </div>
@@ -49,4 +48,3 @@ const Form = () => {
 }
 
 export default Form;
-
